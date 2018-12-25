@@ -9,6 +9,9 @@
         <variable
             name="test"
             type="com.example.a45010.databindingdemo.TestModel"/>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener"/>
     </data>
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,6 +28,12 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="@{`姓名 ：`+user.name}"/>
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickListener}"
+            android:text="btn"/>
     </LinearLayout>
 
 </layout>
