@@ -19,5 +19,8 @@ public class MainActivity extends AppCompatActivity {
         TestModel testModel = new TestModel();
         testModel.setName("tom");
         binding.setTest(testModel);
+
+        UserBean userBean = new UserBean("张三");
+        binding.setUser(userBean);
     }
 }

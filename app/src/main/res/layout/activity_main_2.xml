@@ -2,6 +2,10 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
+        <import type="com.example.a45010.databindingdemo.UserBean"/>
+        <variable
+            name="user"
+            type="UserBean"/>
         <variable
             name="test"
             type="com.example.a45010.databindingdemo.TestModel"/>
@@ -16,6 +20,11 @@
             android:textSize="20sp"
             android:gravity="center"
             android:text="@{test.name}"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@{`姓名 ：`+user.name}"/>
     </LinearLayout>
 
 </layout>
